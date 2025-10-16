@@ -1,0 +1,401 @@
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+		src: url(../font/Italianno-Regular.ttf);
+		font-family: italiano_font;
+	}	
+	body{
+		font-family: italiano_font;
+		perspective: 600px;
+	}
+	
+.body-content{
+	background-image: url(../images/black-wood-texture-15204.jpg);
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+/*Header navbar*/
+.navbar-wrapper{
+	height: 200px;
+	z-index: 5;
+}
+.navbar{
+	background-color: rgba(237,237,237,0.00)!important;
+}
+.navbar .navbar-brand{
+	color: rgba(255,255,255,1.00);
+	font-size: 40px;
+}
+.navbar .navbar-brand img{
+	width: 150px;
+	height: 120px;
+}
+
+.navbar .nav-item .nav-link , .navbar .nav-item .nav-link:hover{
+	color: rgba(170, 173, 180, 1.00);
+	font-size: 25px;
+	transition: all 300ms;
+}
+.navbar .nav-item:first-of-type .nav-link{
+	color: rgba(245,245,245,1.00);
+	text-decoration: underline;
+}
+/*End of header navbar*/
+
+
+/*Offers section-First slider*/
+.carousel{
+	z-index: 1;
+}
+.carousel .container{
+	position: relative;
+}
+.carousel .container .aside-picture{
+	right: -8.5%;
+	top: 5%;
+	z-index: -1;
+}
+.slider-wrapper{
+	padding-left: 6px;
+	height: 430px;
+	background-image: url(../images/StoneFrame1.png);
+	background-repeat:no-repeat;
+	background-size:100% 100% ;
+	border: 1px solid white;
+}
+.slider-wrapper .carousel-inner{
+	position: relative;
+	height: inherit;
+	width: 95%;
+	margin: auto;
+}
+.slider-wrapper .carousel-inner .carousel-item{
+	padding-bottom: 2px;
+	height: 88%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.slider-wrapper .carousel-inner .carousel-item .slider-price-section{
+	height: 100%;
+	width: 50%;
+	background-color: rgba(0,0,0,0.81);
+	position: absolute;
+	left: -50%;
+	display: none;
+	color: rgba(246,190,9,1.00);
+	text-align: center;
+}
+.slider-wrapper .carousel-inner .carousel-item .slider-price-section .name-price-wrapper{
+	width: 80%;
+	height: 40%;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	font-size: 30px;
+}
+.slider-wrapper .carousel-inner .carousel-item .slider-price-section .name-price-wrapper h1{
+	font-size: 40px;
+	font-weight: bold;
+}
+.slider-wrapper .carousel-inner .carousel-item .slider-price-section .name-price-wrapper .seperate-line{
+	width: 100%;
+	height: 2px;
+	background-color: rgba(78,78,78,1.00);
+}
+
+
+/*public class*/
+.seperate-line{
+	width: 100%;
+	height: 2px;
+	background-color: rgba(78,78,78,1.00);
+}
+.line-wrapper{
+	width: 80%;
+	margin: auto;
+}
+/*End of offers section-first slider*/
+
+
+/*title pictures section*/
+.title-picture-wrapper{
+	border: 1px solid white;
+	height: 120px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 40px;
+	color: rgba(245,245,245,1.00);
+	position: relative;
+	margin-top: 20px;
+}
+.title-picture-wrapper .title-picture{
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 50%;
+}
+.title-picture-wrapper .title-picture img{
+	width: 60px;
+	height: 60px;
+}
+
+/*End of title pictures section*/
+
+
+/*Menu section*/
+.menu{
+	width: 33%;
+	perspective: 600px;
+	margin: 0 auto;
+	box-shadow: 3px 3px 5px 3px black;
+	display: flex;
+}
+/*cover icon on menu*/
+.menu .left-cover-front .menu-centered-img-btn{
+	border: 1px solid black;
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.menu .left-cover-front .menu-centered-img-btn img{
+	width: 150px;
+	height: 120px;
+}
+.menu .left-cover-front .menu-centered-img-btn .menu-btn{
+	border-radius: 5px;
+	padding: 5px 0;
+	border: 1px solid rgba(246,190,9,1.00);
+	font-size: 25px;
+	cursor: pointer;
+}
+.menu .left-cover-front .menu-centered-img-btn .menu-btn a{
+	width: 100%;
+	height: 100%;
+	color: rgba(246,190,9,1.00);
+}
+.menu .left-cover-front .menu-centered-img-btn .menu-btn a:hover{
+	text-decoration: none;
+}
+.menu .left-cover-front .menu-centered-img-btn .menu-btn:hover{
+	font-weight: bold;
+}
+
+
+/*menu exit button*/
+.menu .right-cover-back .menu-exit-btn{
+	position: absolute;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+}
+.menu .right-cover-back .menu-exit-btn i{
+	font-size: 20px;
+	color: rgba(246,190,9,1.00);
+}
+.menu .right-cover-back .menu-exit-btn i:hover{
+	text-decoration: underline;
+}
+
+
+.menu .menu-title-icon-wrapper{
+	text-align: center;
+}
+.menu .menu-title-icon-wrapper h1{
+	color: rgba(246,190,9,1.00);
+}
+
+/*icons inside menu*/
+.menu .menu-title-icon-wrapper img{
+	width: 70px;
+	height: 70px;
+}
+.menu .menu-border{
+	border: 1px solid rgba(75,58,1,1.00);
+}
+.left-cover , .right-cover , .center-cover{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+
+}
+.menu .left-cover-front{
+	text-align: center;
+}
+
+.left-cover{
+	transform-origin: left;
+	z-index: 3;
+	transition: all 500ms ease-in-out;
+}
+.right-cover{
+	transform-origin: right;
+	z-index: 2;
+	transition: all 500ms ease-in-out;
+}
+.center-cover{
+	z-index: 1;
+}	
+.cover-front , .cover-back , .center-cover{
+	background: linear-gradient(to top right , rgba(179,163,129,1.00) , rgba(17,15,14,1.00));
+	width: 100%;
+	height: auto;
+	position: absolute;
+	backface-visibility: hidden;
+}
+.menu .cover-back{
+	transform: rotateY(180deg);
+}
+
+.menu .menu-item {
+	font-family: arial;
+	font-size: 1.5vw;
+	color: rgba(255, 255, 255, 1.00);
+	width: 100%;
+	margin: auto;
+}
+.menu .menu-item:hover{
+	background-color: rgba(66,52,34,0.66);
+	cursor: pointer;
+}
+
+
+/*End of menu section*/
+
+
+
+/*Recipes section*/
+
+
+/*
+<div class="recipes-section">
+	<div class="container">
+		<div class="recipes-slider-wrapper">
+			<div class="recipes-slider">
+				<div class="recipes-item">
+					<img src="" alt="">
+					<h1>Item one</h1>
+					<button>Show the recipe</button>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
+
+
+
+<div class="recipes-slider-button-wrapper">
+				<div class="recipes-slider-button"><i class="fa fa-caret-left"></i></div>
+				<div class="recipes-slider-button"><i class="fa fa-caret-right"></i></div>
+*/
+.recipes-section{
+/*	perspective: 600px;*/
+}
+.recipes-section .recipes-slider-wrapper{
+	width: 70%;
+	border: 1px solid black;
+	margin: auto;
+	overflow-x: hidden;
+	overflow-y: visible;
+}
+.recipes-section .recipes-slider-wrapper .recipes-slider{
+	display: flex;
+	text-align: center;
+/*	border: 1px solid red;*/
+}
+.recipes-section .recipes-slider-wrapper .recipes-slider .recipes-item{
+	transition: transform 500ms;
+}
+
+.recipes-section .recipes-slider-wrapper .recipes-slider .recipes-item-zoom{
+	transform: scale(1.4);
+}
+
+/*recipes images*/
+
+.recipes-section .recipes-slider-wrapper .recipes-slider .recipes-item img{
+	width: 50%;
+	height : 70px;
+}
+ /*recipes h1 text*/
+.recipes-section .recipes-slider-wrapper .recipes-slider .recipes-item h1{
+	color: white;
+}
+
+/*slider buttons*/
+.recipes-section .recipes-slider-wrapper .recipes-slider-button-wrapper{
+	display: flex;
+}
+
+.recipes-section .recipes-slider-wrapper .recipes-slider-button-wrapper .recipes-slider-button{
+	width: 50%;
+	font-size: 45px;
+	text-align: center;
+	color: rgba(181,181,181,1.00);
+}
+.recipes-section .recipes-slider-wrapper .recipes-slider-button-wrapper .recipes-slider-button i{
+	margin-top: 25px;
+}
+.recipes-section .recipes-slider-wrapper .recipes-slider-button-wrapper .recipes-slider-button i:hover{
+	color: rgba(237,237,237,1.00);
+	cursor: pointer;
+}
+
+/*End of recipes section*/
+
+
+
+/*Public classes*/
+
+
+.container{
+	position: relative;
+	width: 850px;
+	border: 1px solid green;
+}
+.aside-picture{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+/*	z-index: -1;*/
+}
+.aside-picture-right-bottom{
+	right: 4%;
+	bottom: 3%;
+}
+.aside-picture-right-top{
+	right: 2%;
+	top: 2%;
+}
+.aside-picture-left-top{
+	left: 5%;
+	top: 5%;
+}
+.aside-picture-left-bottom{
+	left: 2%;
+	bottom: 2%;
+}
+.aside-picture-200w{
+	width: 200px;
+	height: 200px;
+}
+/*End of Public classes*/
